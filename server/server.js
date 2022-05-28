@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 const port = process.env.PORT || 5000;
 const URL = process.env.MONGO_URI;
 
-mongoose.connect(URL, {
+mongoose.connect("mongodb+srv://login:loginproject@cluster0.qkj5e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }, (err) => {
